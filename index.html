@@ -4,60 +4,61 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Page de réservation MAESTRO</title>
-
+<title>MAESTRO · Réserve ton appel</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<style>
-body{margin:0}
-a{color:#191862}a:hover{color:#262A30}
-</style>
-
-<style>body{background:#E9EAF0;display:flex;justify-content:center}</style>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div style="width: 390px; min-height: 1640px; box-sizing: border-box; background: #FFFFFF; font-family: Inter, sans-serif; color: #262A30; display: flex; flex-direction: column">
-<div style="background: #191862; color: #FFFFFF; padding: 14px 24px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; text-align: center">Pour les salariés qui vendent déjà au quotidien</div>
-<div style="padding: 32px 24px 0; display: flex; flex-direction: column; gap: 20px">
-<div style="font-family: Archivo, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.18em; color: #191862">MAESTRO</div>
-<h1 style="margin: 0; font-family: Archivo, sans-serif; font-size: 28px; line-height: 1.18; font-weight: 800; color: #262A30">Est-il possible de décrocher ta première mission de closing en 90 jours, sans quitter ton job avant que ça paie ?</h1>
-<div style="width: 48px; height: 3px; background: #C9A23F"></div>
-<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #262A30">Ne me crois pas sur parole : regarde la vidéo avant de réserver ton appel.</p>
-<div style="position: relative; width: 342px; height: 192px; border-radius: 12px; background: #191862; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px">
-<svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="none" stroke="#FFFFFF" stroke-width="2"></circle><path d="M23 18 L39 28 L23 38 Z" fill="#FFFFFF"></path></svg>
-<div style="font-size: 12px; color: #FFFFFF; letter-spacing: 0.04em">[TA VIDÉO — 8 à 12 min, sans barre de progression]</div>
+<div class="band">Pour les salariés qui vendent déjà au quotidien</div>
+<main class="wrap">
+<div class="booking">
+<section class="intro">
+<div class="brand">MAESTRO</div>
+<h1>Est-il possible de décrocher ta première mission de closing en 90 jours, sans quitter ton job avant que ça paie ?</h1>
+<div class="rule"></div>
+<p class="lead">Ne me crois pas sur parole : regarde la vidéo avant de réserver ton appel.</p>
+<div class="video" role="img" aria-label="Emplacement de la vidéo">
+<svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M23 18 L39 28 L23 38 Z" fill="#FFFFFF"/></svg>
+<span>[TA VIDÉO : 8 à 12 min]</span>
 </div>
-<div style="border: 2px solid #191862; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 8px">
-<div style="font-family: Archivo, sans-serif; font-size: 15px; font-weight: 800; color: #191862; text-transform: uppercase; letter-spacing: 0.04em">Garantie écrite au contrat</div>
-<p style="margin: 0; font-size: 15px; line-height: 1.5; font-weight: 600">Si en 90 jours tu n'as pas décroché ta première mission alors que tu as fait ta part, je continue à t'accompagner gratuitement jusqu'à ce que ce soit le cas.</p>
+<div class="card">
+<div class="label">Garantie écrite au contrat</div>
+<p style="margin:0;font-weight:600">Si en 90 jours tu n'as pas décroché ta première mission alors que tu as fait ta part, je continue à t'accompagner gratuitement jusqu'à ce que ce soit le cas.</p>
 </div>
-<p style="margin: 8px 0 0; font-size: 16px; font-weight: 700; color: #B42318; text-align: center">Entre tes informations pour voir s'il reste des créneaux</p>
-<div style="border: 2px dashed #191862; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 12px">
-<div style="font-size: 12px; color: #4A4F57; text-align: center">[MODULE iCLOSED INTÉGRÉ ICI]</div>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600">Prénom<input type="text" style="height: 44px; border: 1px solid #C4C7CE; border-radius: 8px; padding: 0 12px; font-size: 15px"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600">E-mail<input type="email" style="height: 44px; border: 1px solid #C4C7CE; border-radius: 8px; padding: 0 12px; font-size: 15px"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600">Téléphone<input type="tel" style="height: 44px; border: 1px solid #C4C7CE; border-radius: 8px; padding: 0 12px; font-size: 15px"></label>
-<button type="button" style="height: 52px; border: none; border-radius: 10px; background: #191862; color: #FFFFFF; font-family: Archivo, sans-serif; font-size: 16px; font-weight: 700">Voir les créneaux disponibles</button>
+</section>
+<section class="book" id="reserver">
+<p class="notice">Choisis ton créneau pour voir s'il reste des places</p>
+<div class="cal">
+<div id="cal-inline"></div>
 </div>
-<div style="background: #F3F3F8; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 8px">
-<div style="font-family: Archivo, sans-serif; font-size: 15px; font-weight: 800; color: #191862">Le prix, avant l'appel</div>
-<p style="margin: 0; font-size: 15px; line-height: 1.5">3 000 € à l'inscription. Les 2 000 € restants ne sont dus que lorsque tu as encaissé 2 000 € de commissions.</p>
-<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #4A4F57">Pas de prix caché derrière un appel. Pas de revenu promis.</p>
+<a class="fallback" href="https://cal.com/alexandra.call/45mins" target="_blank" rel="noopener">Le calendrier ne s'affiche pas ? Ouvre-le ici</a>
+<div class="soft" style="margin-top:20px">
+<div class="label">Le prix, avant l'appel</div>
+<p style="margin:0">3 000 € à l'inscription. Les 2 000 € restants ne sont dus que lorsque tu as encaissé 2 000 € de commissions.</p>
+<p style="margin:8px 0 0;font-size:14px;color:#4A4F57">Pas de prix caché derrière un appel. Pas de revenu promis.</p>
 </div>
-<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 8px">
-<div style="font-family: Archivo, sans-serif; font-size: 20px; font-weight: 800">Qui je suis</div>
-<p style="margin: 0; font-size: 15px; line-height: 1.5">Alexandra, closeuse professionnelle. Je close toujours aujourd'hui : je n'enseigne pas un métier que j'ai quitté.</p>
+</section>
+<section class="proof stack">
+<div>
+<h2>Qui je suis</h2>
+<p style="margin:0">Alexandra, closeuse professionnelle. Je close toujours aujourd'hui : je n'enseigne pas un métier que j'ai quitté.</p>
 </div>
-<div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 12px">
-<div style="display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid #E3E4EA; padding-bottom: 12px"><span style="font-family: Archivo, sans-serif; font-size: 26px; font-weight: 800; color: #191862; min-width: 128px">+350 000 €</span><span style="font-size: 14px; line-height: 1.4">de ventes générées pour mes clients, première année</span></div>
-<div style="display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid #E3E4EA; padding-bottom: 12px"><span style="font-family: Archivo, sans-serif; font-size: 26px; font-weight: 800; color: #191862; min-width: 128px">2 ans</span><span style="font-size: 14px; line-height: 1.4">de closing en continu</span></div>
-<div style="display: flex; align-items: baseline; gap: 14px; padding-bottom: 12px"><span style="font-family: Archivo, sans-serif; font-size: 26px; font-weight: 800; color: #191862; min-width: 128px">54 %</span><span style="font-size: 14px; line-height: 1.4">de taux de close, mesuré en septembre</span></div>
+<div class="stats">
+<div class="stat"><b>+350 000 €</b><span>de ventes générées pour mes clients, première année</span></div>
+<div class="stat"><b>2 ans</b><span>de closing en continu</span></div>
+<div class="stat"><b>54 %</b><span>de taux de close, mesuré en septembre</span></div>
 </div>
-<div style="border: 1px dashed #C4C7CE; border-radius: 12px; padding: 20px; font-size: 13px; color: #4A4F57; text-align: center">[Témoignages élèves : à ajouter dès les premiers résultats]</div>
+<div class="placeholder">[Témoignages élèves : à ajouter dès les premiers résultats]</div>
+</section>
 </div>
-<div style="margin-top: auto; padding: 32px 24px; font-size: 12px; color: #4A4F57; text-align: center">MAESTRO · Alexandra Sudron · Mentions légales · CGV</div>
-</div>
-
+</main>
+<footer>MAESTRO · Alexandra Sudron · Mentions légales · CGV</footer>
+<script type="text/javascript">
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "45mins", { origin: "https://cal.com" });
+Cal.ns["45mins"]("inline", { elementOrSelector: "#cal-inline", config: { layout: "month_view" }, calLink: "alexandra.call/45mins" });
+Cal.ns["45mins"]("ui", { hideEventTypeDetails: false, layout: "month_view", cssVarsPerTheme: { light: { "cal-brand": "#191862" } } });
+</script>
 </body>
 </html>
