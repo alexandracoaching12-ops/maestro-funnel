@@ -16,7 +16,7 @@
 .cta-note{font-size:14px;color:#E6E6F0;margin:12px 0 0}
 .strip{border-bottom:1px solid var(--line)}
 .strip .in{max-width:1160px;margin:0 auto;padding:28px 24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;text-align:center}
-@media (min-width:860px){.strip .in{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (min-width:760px){.strip .in{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .strip b{display:block;font-family:Archivo,system-ui,sans-serif;font-size:clamp(26px,3vw,34px);font-weight:800;color:var(--blue)}
 .strip span{font-size:14px;color:var(--muted)}
 .section{max-width:1160px;margin:0 auto;padding:72px 24px}
