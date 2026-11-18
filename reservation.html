@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>MAESTRO · Réserve ton appel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="band">Pour les salariés qui vendent déjà au quotidien</div>
+<main class="wrap">
+<div class="booking">
+<section class="intro">
+<div class="brand">MAESTRO</div>
+<h1>Est-il possible de décrocher ta première mission de closing en 90 jours, sans quitter ton job avant que ça paie ?</h1>
+<div class="rule"></div>
+<p class="lead">Ne me crois pas sur parole : regarde la vidéo avant de réserver ton appel.</p>
+<div class="video" role="img" aria-label="Emplacement de la vidéo">
+<svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M23 18 L39 28 L23 38 Z" fill="#FFFFFF"/></svg>
+<span>[TA VIDÉO : 8 à 12 min]</span>
+</div>
+<div class="card">
+<div class="label">Garantie écrite au contrat</div>
+<p style="margin:0;font-weight:600">Si en 90 jours tu n'as pas décroché ta première mission alors que tu as fait ta part, je continue à t'accompagner gratuitement jusqu'à ce que ce soit le cas.</p>
+</div>
+</section>
+<section class="book" id="reserver">
+<p class="notice">Choisis ton créneau pour voir s'il reste des places</p>
+<div class="cal">
+<div id="cal-inline"></div>
+</div>
+<a class="fallback" href="https://cal.com/alexandra.call/45mins" target="_blank" rel="noopener">Le calendrier ne s'affiche pas ? Ouvre-le ici</a>
+<div class="soft" style="margin-top:20px">
+<div class="label">Le prix, avant l'appel</div>
+<p style="margin:0">3 000 € à l'inscription. Les 2 000 € restants ne sont dus que lorsque tu as encaissé 2 000 € de commissions.</p>
+<p style="margin:8px 0 0;font-size:14px;color:#4A4F57">Pas de prix caché derrière un appel. Pas de revenu promis.</p>
+</div>
+</section>
+<section class="proof stack">
+<div>
+<h2>Qui je suis</h2>
+<p style="margin:0">Alexandra, closeuse professionnelle. Je close toujours aujourd'hui : je n'enseigne pas un métier que j'ai quitté.</p>
+</div>
+<div class="stats">
+<div class="stat"><b>+350 000 €</b><span>de ventes générées pour mes clients, première année</span></div>
+<div class="stat"><b>2 ans</b><span>de closing en continu</span></div>
+<div class="stat"><b>54 %</b><span>de taux de close, mesuré en septembre</span></div>
+</div>
+<div class="placeholder">[Témoignages élèves : à ajouter dès les premiers résultats]</div>
+</section>
+</div>
+</main>
+<footer>MAESTRO · Alexandra Sudron · Mentions légales · CGV</footer>
+<script type="text/javascript">
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "45mins", { origin: "https://cal.com" });
+Cal.ns["45mins"]("inline", { elementOrSelector: "#cal-inline", config: { layout: "month_view", theme: "light" }, calLink: "alexandra.call/45mins" });
+Cal.ns["45mins"]("ui", { theme: "light", hideEventTypeDetails: false, layout: "month_view", cssVarsPerTheme: { light: { "cal-brand": "#191862" } } });
+</script>
+</body>
+</html>
