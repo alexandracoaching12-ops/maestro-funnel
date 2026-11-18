@@ -6,14 +6,14 @@
   // 1. Apparition au défilement (fondu + légère montée), en cascade dans chaque groupe
   var items = document.querySelectorAll('[data-reveal]');
   if (reduce || !('IntersectionObserver' in window)) {
-    items.forEach(function (el) { el.classList.add('in'); });
+    items.forEach(function (el) { el.classList.add('is-in'); });
   } else {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
         var el = entry.target;
         var delay = parseInt(el.getAttribute('data-delay') || '0', 10);
-        setTimeout(function () { el.classList.add('in'); }, delay);
+        setTimeout(function () { el.classList.add('is-in'); }, delay);
         io.unobserve(el);
       });
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
@@ -72,7 +72,7 @@
 
   // Sécurité : si le navigateur ne déclenche pas l'observateur, tout s'affiche quand même
   setTimeout(function () {
-    if (!document.querySelector('[data-reveal].in')) items.forEach(function (el) { el.classList.add('in'); });
+    if (!document.querySelector('[data-reveal].is-in')) items.forEach(function (el) { el.classList.add('is-in'); });
     counters.forEach(function (el) {
       if (/^\D*0\D*$/.test(el.textContent)) el.textContent = (el.getAttribute('data-prefix') || '') + format(parseFloat(el.getAttribute('data-count'))) + (el.getAttribute('data-suffix') || '');
     });
