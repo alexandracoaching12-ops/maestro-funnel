@@ -69,4 +69,12 @@
       details.forEach(function (o) { if (o !== d) o.open = false; });
     });
   });
+
+  // Sécurité : si le navigateur ne déclenche pas l'observateur, tout s'affiche quand même
+  setTimeout(function () {
+    if (!document.querySelector('[data-reveal].in')) items.forEach(function (el) { el.classList.add('in'); });
+    counters.forEach(function (el) {
+      if (/^\D*0\D*$/.test(el.textContent)) el.textContent = (el.getAttribute('data-prefix') || '') + format(parseFloat(el.getAttribute('data-count'))) + (el.getAttribute('data-suffix') || '');
+    });
+  }, 3000);
 })();
