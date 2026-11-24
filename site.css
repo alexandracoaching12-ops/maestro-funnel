@@ -356,3 +356,4 @@ section{position:relative}
 .vs-yes .mk{background:var(--gold);color:var(--blue-3)}
 .vs-badge{display:none}
 @media (min-width:860px){.vs-badge{display:grid;place-items:center;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:#FFFFFF;color:var(--blue);font-family:Archivo,system-ui,sans-serif;font-weight:900;font-size:16px;box-shadow:0 10px 30px -8px rgba(25,24,98,.45);z-index:2;border:3px solid var(--soft)}}
+.cta-row{text-align:center;margin-top:48px}
