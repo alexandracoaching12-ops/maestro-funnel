@@ -46,13 +46,20 @@
 
   // 4. Frise de la méthode : la ligne se remplit au défilement
   var tl = document.getElementById('timeline');
-  var steps = tl ? tl.querySelectorAll('li') : [];
+  var steps = tl ? tl.querySelectorAll(':scope > li') : [];
   function timeline() {
-    if (!tl) return;
-    var r = tl.getBoundingClientRect(), vh = window.innerHeight;
-    var p = Math.max(0, Math.min(1, (vh * 0.6 - r.top) / r.height));
-    tl.style.setProperty('--prog', (p * 100).toFixed(1) + '%');
-    steps.forEach(function (li) { var b = li.getBoundingClientRect(); li.classList.toggle('lit', b.top < vh * 0.6); });
+    if (!tl || !steps.length) return;
+    var dots = tl.querySelectorAll('.tl-dot');
+    var first = dots[0], last = dots[dots.length - 1];
+    var tr = tl.getBoundingClientRect(), fr = first.getBoundingClientRect(), lr = last.getBoundingClientRect();
+    var top = fr.top - tr.top + fr.height / 2;
+    var len = (lr.top - tr.top + lr.height / 2) - top;
+    tl.style.setProperty('--line-top', top + 'px');
+    tl.style.setProperty('--line-h', len + 'px');
+    var vh = window.innerHeight;
+    var p = Math.max(0, Math.min(1, (vh * 0.6 - (tr.top + top)) / len));
+    tl.style.setProperty('--prog', (p * len).toFixed(1) + 'px');
+    steps.forEach(function (li) { var b = li.querySelector('.tl-dot').getBoundingClientRect(); li.classList.toggle('lit', b.top + 24 < vh * 0.6); });
   }
 
   var ticking = false;
