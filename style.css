@@ -66,4 +66,4 @@ footer{border-top:1px solid var(--line);padding:24px;text-align:center;font-size
 .fill{background:#FFF4D6;padding:0 4px;border-radius:4px}
 footer a{color:var(--muted)}
 
-.merci-video{display:block;width:100%;aspect-ratio:6/5;border-radius:14px;background:#000;margin:16px 0 20px}
+.merci-video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000;margin:16px 0 20px}
