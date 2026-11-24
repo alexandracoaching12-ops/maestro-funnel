@@ -242,3 +242,5 @@ section{position:relative}
   .btn{width:100%;padding:0 20px;font-size:16px}
   .about-photo figcaption{left:12px}
 }
+/* mobile : le calendrier passe avant la préparation */
+@media (max-width:999px){.calbox{order:-1}.prep{position:static}}
