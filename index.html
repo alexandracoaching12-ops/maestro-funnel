@@ -4,167 +4,262 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>MAESTRO · Deviens closer, gagne ta liberté</title>
+<title>MAESTRO · Tes premiers revenus de closer en 90 jours</title>
+<meta name="description" content="Génère tes premiers compléments de revenus en closing en 90 jours, sans quitter ton CDI. Mentorat personnalisé avec une closeuse en activité.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=13">
-<link rel="stylesheet" href="landing.css?v=13">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=1">
 </head>
 <body>
 
-<div class="band">Pour les salariés en CDI qui ont une âme de commercial</div>
-<div class="navbar">
-<div class="nav">
-<span class="brand">MAESTRO</span>
-<a class="btn-light" href="#reserver">Réserver mon appel</a>
+<!-- Barre de navigation : blanche sur fond bleu, bleue sur fond blanc -->
+<header class="nav" data-tone="dark" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="MAESTRO, retour en haut">MAESTRO</a>
+    <a class="nav-cta" href="#reserver">Réserver mon appel <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</header>
+
+<!-- HÉRO -->
+<section class="hero" id="top" data-tone="dark">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-in">
+    <span class="pill" data-reveal><span class="dot"></span>Près de 3 ans de closing · +1 500 000 € de ventes générées pour mes clients</span>
+    <h1 data-reveal>Est-il possible de générer <em>tes premiers compléments de revenus en 90&nbsp;jours</em>, sans quitter ton CDI&nbsp;?</h1>
+    <p class="sub" data-reveal>Et si tu n'y arrives pas, je te rembourse.</p>
+    <p class="note" data-reveal>Ne me crois pas sur parole : regarde d'abord la vidéo.</p>
+
+    <div class="video vsl" id="vsl" data-reveal>
+      <video src="vsl-maestro.mp4" poster="vsl-poster.jpg" preload="metadata" playsinline controlslist="nodownload noplaybackrate" disablepictureinpicture></video>
+      <button class="vsl-play" type="button" aria-label="Lancer la vidéo (environ 4 min)">
+        <span class="ring"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+        <span class="lbl">Regarder la vidéo · environ 4 min</span>
+      </button>
+      <button class="vsl-fs" type="button" aria-label="Plein écran"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="#FFFFFF" stroke-width="2"/></svg></button>
+    </div>
+
+    <a class="btn btn-light" href="#reserver" data-reveal>Réserver mon appel de candidature <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <p class="hero-foot" data-reveal>Appel gratuit de 45 minutes · places limitées chaque semaine</p>
+  </div>
+</section>
+
+<!-- Bandeau défilant -->
+<div class="marquee" aria-hidden="true" data-tone="dark">
+  <div class="track">
+    <span>Être là à la sortie de l'école</span><span>Mentorat personnalisé</span><span>Partir sans poser de congés</span><span>Avec une professionnelle en activité</span><span>Souffler quand tu en as besoin</span><span>Tes appels écoutés et corrigés</span><span>Ne plus dépendre d'un seul salaire</span><span>Une partie payée au résultat</span>
+    <span>Être là à la sortie de l'école</span><span>Mentorat personnalisé</span><span>Partir sans poser de congés</span><span>Avec une professionnelle en activité</span><span>Souffler quand tu en as besoin</span><span>Tes appels écoutés et corrigés</span><span>Ne plus dépendre d'un seul salaire</span><span>Une partie payée au résultat</span>
+  </div>
 </div>
-</div>
-<header class="top">
-<div class="hero">
-<span class="pill">Plus de 3 ans de closing · +350 000 € de ventes générées pour mes clients dès mes premiers mois</span>
-<h1>Est-il possible de décrocher <em>ta première mission de closer en 90 jours</em>, sans quitter ton CDI ?</h1>
-<p class="sub">Même si tu n'as jamais vendu au téléphone. Avec une closeuse qui en vit encore aujourd'hui.</p>
-<p class="cta-note" style="margin-top:28px">Ne me crois pas sur parole : regarde d'abord la vidéo.</p>
-<div class="video vsl" id="vsl">
-<video src="vsl-maestro.mp4" poster="vsl-poster.jpg" preload="metadata" playsinline controlslist="nodownload noplaybackrate" disablepictureinpicture></video>
-<button class="vsl-play" type="button" aria-label="Lancer la vidéo (environ 4 min)">
-<svg width="72" height="72" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="rgba(25,24,98,.55)" stroke="#FFFFFF" stroke-width="2"/><path d="M23 18 L39 28 L23 38 Z" fill="#FFFFFF"/></svg>
-<span>Regarder la vidéo · environ 4 min</span>
-</button>
-<button class="vsl-fs" type="button" aria-label="Plein écran"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="#FFFFFF" stroke-width="2"/></svg></button>
-</div>
+
+<!-- RÉSERVATION -->
+<section class="book" id="reserver" data-tone="light">
+  <div class="wrap">
+    <div class="head center" data-reveal>
+      <span class="kicker">Étape 1 · Réserve ton créneau</span>
+      <h2>Ton appel de candidature</h2>
+      <p class="lede">45 minutes, en visio, pour voir ensemble si ce que je propose correspond vraiment à ce que tu cherches.</p>
+    </div>
+    <div class="book-grid">
+      <aside class="prep" data-reveal="left">
+        <h3>Pour que l'appel te serve vraiment</h3>
+        <ul class="pins">
+          <li><span class="pin"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><circle cx="16.5" cy="9" r="2.6"/><path d="M3.5 19c.6-3 2.8-4.6 5.5-4.6s4.9 1.6 5.5 4.6M14 15.1c.8-.4 1.6-.6 2.5-.6 2.2 0 3.8 1.3 4.2 3.6"/></svg></span><div><b>Tu décides seul(e) ?</b><p>Si ta décision engage aussi ton couple, viens à deux. Vous repartirez avec les mêmes infos.</p></div></li>
+          <li><span class="pin"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/><path d="M12 7v5l3 2"/></svg></span><div><b>45 minutes au calme</b><p>Pas en voiture, pas en pause au travail. Un endroit où tu peux parler librement.</p></div></li>
+          <li><span class="pin"><svg viewBox="0 0 24 24"><path d="M5 4h10l4 4v12H5z"/><path d="M9 12h6M9 16h4"/></svg></span><div><b>De quoi noter</b><p>On va parler chiffres, étapes et calendrier. Tu voudras t'en souvenir.</p></div></li>
+          <li><span class="pin"><svg viewBox="0 0 24 24"><path d="M4 18l5-6 4 3 7-9"/><path d="M15 6h5v5"/></svg></span><div><b>Ta situation en tête</b><p>Ton salaire actuel, le temps que tu peux libérer chaque semaine, ce que tu veux changer.</p></div></li>
+          <li><span class="pin"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg></span><div><b>Prêt(e) à changer quelque chose</b><p>Si tu veux juste te renseigner, une vidéo suffira. Cet appel est pour ceux qui veulent passer à l'action.</p></div></li>
+          <li><span class="pin"><svg viewBox="0 0 24 24"><path d="M4 7h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span><div><b>À l'heure</b><p>Le lien Google Meet arrive par e-mail. Un empêchement ? Préviens-moi sur WhatsApp 24 h avant.</p></div></li>
+        </ul>
+      </aside>
+      <div class="calbox" data-reveal="right">
+        <p class="notice"><span class="live"></span>Choisis ton créneau pour voir s'il reste des places</p>
+        <div class="cal"><div id="cal-inline"></div></div>
+        <a class="fallback" href="https://cal.com/alexandra.call/45mins" target="_blank" rel="noopener">Le calendrier ne s'affiche pas ? Ouvre-le ici</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chiffres -->
+<section class="stats" data-tone="light">
+  <div class="wrap stats-in" data-stagger>
+    <div class="stat" data-reveal><b data-count="1500000" data-prefix="+" data-suffix=" €">+1 500 000 €</b><span>de ventes générées pour les entrepreneurs avec qui j'ai travaillé</span></div>
+    <div class="stat" data-reveal><b data-count="3" data-suffix=" ans">3 ans</b><span>de closing, et je prends encore des appels chaque semaine</span></div>
+    <div class="stat" data-reveal><b data-count="37">37</b><span>missions de closing réalisées</span></div>
+  </div>
+</section>
+
+<!-- Pourquoi pas maintenant : la liberté de… -->
+<section class="why" data-tone="light">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="kicker">Pourquoi pas maintenant</span>
+      <h2>Tu ne cherches pas un nouveau métier. Tu cherches du temps pour ta vie.</h2>
+      <p class="lede">Si tu es ici, tu sais déjà que tu as la fibre commerciale. La vraie question, c'est ce que ça peut changer dans ton quotidien. Voilà ce que le closing m'a permis, et ce qu'on va construire pour toi.</p>
+    </div>
+    <div class="slider" data-reveal>
+      <div class="slides" id="slides">
+        <article class="slide"><span class="num">01</span><h3>La liberté d'être là pour tes enfants</h3><p>Les déposer le matin, les récupérer le soir, être au match du samedi. Tes appels se placent autour de ta vie, pas l'inverse.</p></article>
+        <article class="slide"><span class="num">02</span><h3>La liberté de partir</h3><p>Un ordinateur, un casque, une connexion. Tu travailles aussi bien depuis ton salon que depuis un appartement face à la mer.</p></article>
+        <article class="slide"><span class="num">03</span><h3>La liberté de souffler</h3><p>Avoir assez de marge pour prendre une semaine sans tout calculer, ou lever le pied quand tu en as besoin.</p></article>
+        <article class="slide"><span class="num">04</span><h3>La liberté de choisir</h3><p>Des revenus qui arrivent à côté de ton CDI. Ensuite, c'est toi qui décides si tu veux en faire ton métier à plein temps, et quand.</p></article>
+      </div>
+      <div class="slider-ui">
+        <div class="dots" id="dots"></div>
+        <div class="arrows">
+          <button type="button" class="sl-btn" id="prev" aria-label="Précédent"><svg viewBox="0 0 20 20"><path d="M12 5l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button type="button" class="sl-btn" id="next" aria-label="Suivant"><svg viewBox="0 0 20 20"><path d="M8 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <p class="punch" data-reveal>La question n'est pas de savoir si tu en es capable. C'est combien de temps tu veux encore attendre.</p>
+  </div>
+</section>
+
+<!-- Méthode -->
+<section class="method" id="methode" data-tone="dark">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="kicker">La méthode Closer Placement · 90 jours</span>
+      <h2>On n'apprend pas à closer en regardant des vidéos. Comme on n'apprend pas le foot devant un match.</h2>
+      <p class="lede">Si tu as déjà regardé des contenus sur le closing sans jamais te lancer, ce n'est pas un manque de motivation. C'est la méthode qui ne marche pas. Ici, tu répètes sur de vrais appels, corrigés un par un.</p>
+    </div>
+    <ol class="timeline" id="timeline">
+      <li data-reveal><span class="tl-dot">1</span><div><span class="tl-k">Étape 1</span><h3>Comprendre</h3><p>La trame d'un appel, la découverte, les objections. Le minimum utile, pas des heures de théorie. Et ton statut en règle avant ta première commission.</p></div></li>
+      <li data-reveal><span class="tl-dot">2</span><div><span class="tl-k">Étape 2</span><h3>S'entraîner</h3><p>Des mises en situation chaque semaine, puis tes vrais appels écoutés et corrigés. C'est là que tout se joue.</p></div></li>
+      <li data-reveal><span class="tl-dot">3</span><div><span class="tl-k">Étape 3</span><h3>Décrocher</h3><p>Je trie les offres sérieuses, je te prépare aux entretiens, je te présente aux entrepreneurs que je connais et je t'aide à négocier ta commission.</p></div></li>
+      <li data-reveal><span class="tl-dot">+</span><div><span class="tl-k">Ensuite · 9 mois de suivi</span><h3>Durer</h3><p>Je reste à tes côtés, pour que ta première mission ne soit pas la dernière.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- La différence -->
+<section class="diff" data-tone="light">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="kicker">La différence</span>
+      <h2>Ce que fait la plupart du marché, et ce que je fais</h2>
+    </div>
+    <div class="compare" data-reveal>
+      <div class="crow head"><div class="k">Sujet</div><div class="no">Ailleurs, souvent</div><div class="yes">MAESTRO</div></div>
+      <div class="crow"><div class="k">L'objectif</div><div class="no">Des revenus mirobolants promis</div><div class="yes">Tes premiers compléments de revenus en 90 jours, ou je te rembourse</div></div>
+      <div class="crow"><div class="k">Qui t'enseigne</div><div class="no">Des formateurs qui ne closent plus</div><div class="yes">Une professionnelle en activité</div></div>
+      <div class="crow"><div class="k">Le paiement</div><div class="no">Tout à l'inscription</div><div class="yes">Une partie seulement après tes premiers résultats</div></div>
+      <div class="crow"><div class="k">Le format</div><div class="no">Des heures de vidéos</div><div class="yes">Un mentorat personnalisé</div></div>
+      <div class="crow"><div class="k">L'entraînement</div><div class="no">Peu ou pas de pratique</div><div class="yes">Tes appels écoutés et corrigés</div></div>
+      <div class="crow"><div class="k">Les missions</div><div class="no">À chercher seul</div><div class="yes">Offres triées, préparation, présentations</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Réassurance -->
+<section class="trust" data-tone="light">
+  <div class="wrap">
+    <div class="head center" data-reveal>
+      <span class="kicker">Mes engagements</span>
+      <h2>Pourquoi tu peux me faire confiance</h2>
+      <p class="lede">Le marché du closing est plein de promesses. Voilà ce sur quoi je m'engage, par écrit.</p>
+    </div>
+    <div class="cards" data-stagger>
+      <div class="card" data-reveal><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.4-3 7.7-7 9-4-1.3-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Remboursé si tu n'y arrives pas</h3><p>Si tu suis le programme et que tu n'as pas généré tes premiers compléments de revenus en 90 jours, je te rembourse. Les conditions sont écrites dans ton contrat.</p></div>
+      <div class="card" data-reveal><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h4l3 7 4-14 3 7h2"/></svg></span><h3>Une professionnelle en activité</h3><p>37 missions en 3 ans et plus de 1,5 million d'euros de ventes générées. Je prends encore des appels chaque semaine : je t'apprends ce que je fais.</p></div>
+      <div class="card" data-reveal><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M7 7.5c0-1.9 2.2-3 5-3s5 1.1 5 3-2.2 2.6-5 3.5-5 1.6-5 3.5 2.2 3 5 3 5-1.1 5-3"/></svg></span><h3>Une partie payée au résultat</h3><p>Tu ne règles la seconde partie qu'une fois tes premières commissions encaissées.</p></div>
+      <div class="card" data-reveal><span class="ic"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M9 10h7M9 14h7M9 18h4"/></svg></span><h3>Un contrat clair, avant tout paiement</h3><p>Montants, étapes, conditions : tout est écrit noir sur blanc. Et tu as 14 jours pour changer d'avis.</p></div>
+      <div class="card" data-reveal><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.6 7-5.6s6.2 2 7 5.6"/></svg></span><h3>Peu d'élèves à la fois</h3><p>J'écoute les appels de chacun. Quand je ne peux plus suivre correctement, je refuse des candidatures.</p></div>
+      <div class="card" data-reveal><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></span><h3>Un suivi qui dure</h3><p>90 jours pour te lancer, puis 9 mois de suivi. Je ne disparais pas après la vente.</p></div>
+    </div>
+    <div class="values" data-reveal>
+      <div><b>Éthique</b><span>Je ne te vends rien que je n'ai pas construit.</span></div>
+      <div><b>Exigence</b><span>On s'entraîne jusqu'à ce que ce soit naturel.</span></div>
+      <div><b>Transparence</b><span>Les vrais chiffres, les vraies conditions.</span></div>
+      <div><b>Liberté</b><span>Le but, c'est ta vie, pas ton agenda.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Le mot de la fondatrice -->
+<section class="word" data-tone="dark">
+  <div class="wrap word-in">
+    <figure class="word-photo" data-reveal="left"><img src="alexandra-maroc.jpg" width="800" height="1000" alt="Alexandra au téléphone devant une fontaine, de nuit" loading="lazy"></figure>
+    <div class="word-txt" data-reveal="right">
+      <span class="kicker">Le mot de la fondatrice</span>
+      <blockquote>« Le closing, ce n'est pas forcer les gens à acheter. C'est écouter quelqu'un vraiment, et l'aider à prendre une décision. Peu de gens savent le faire, et c'est pour ça que ça se paie bien. Moi, ça m'a rendu ma liberté. J'ai créé MAESTRO pour que ça te fasse la même chose. »</blockquote>
+      <p class="sign">Alexandra, fondatrice de MAESTRO</p>
+    </div>
+  </div>
+</section>
+
+<!-- Qui je suis -->
+<section class="about" data-tone="light">
+  <div class="wrap about-in">
+    <div class="about-txt" data-reveal="left">
+      <span class="kicker">Qui je suis</span>
+      <h2>Rien ne me prédestinait à la vente</h2>
+      <p>J'ai grandi avec un ballon au pied, en sport-études. Puis j'ai arrêté les études et je suis partie travailler à l'usine. Un jour, une phrase de ma mère a tout fait basculer.</p>
+      <p>Je suis partie un an en Italie, en volontariat. À mon retour, j'ai tenté la fac d'économie. À la journée d'orientation, mon corps a dit non avant moi. J'avais 19 ans, et j'ai décidé de me lancer à mon compte.</p>
+      <p>Le closing est arrivé à ce moment-là. En près de 3 ans, j'ai réalisé 37 missions et généré plus de 1,5 million d'euros de ventes pour les entrepreneurs avec qui j'ai travaillé. Pendant longtemps, j'ai aussi tout donné au travail et je me suis oubliée. C'est ce qui m'a appris que l'argent ne suffit pas : ce qui compte, c'est la liberté qu'il t'achète.</p>
+      <p>Aujourd'hui, je vis à Gênes, je choisis mes horaires, je m'entraîne au foot quand je veux, et je close toujours. MAESTRO, c'est ma façon de transmettre ce chemin, honnêtement.</p>
+      <a class="btn btn-blue" href="#reserver">Réserver mon appel <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <figure class="about-photo" data-reveal="right"><img src="alexandra-profil.jpg" width="800" height="1000" alt="Portrait d'Alexandra Sudron" loading="lazy"><figcaption><b>Alexandra Sudron</b><span>Closeuse · fondatrice de MAESTRO</span></figcaption></figure>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" data-tone="light">
+  <div class="wrap narrow">
+    <div class="head" data-reveal>
+      <span class="kicker">Questions fréquentes</span>
+      <h2>Ce qu'on me demande avant de réserver</h2>
+    </div>
+    <div class="faq2" data-reveal>
+      <details><summary>Comment savoir si c'est sérieux ?</summary><p>Je fais ce métier depuis près de 3 ans et je prends encore des appels chaque semaine. Pendant l'appel, je te montre comment il fonctionne vraiment, avec de vrais exemples, et tu poses toutes les questions que tu veux.</p></details>
+      <details><summary>Le remboursement, comment ça marche ?</summary><p>Si tu suis le programme et que tu n'as généré aucun complément de revenu au bout de 90 jours, je te rembourse. Les conditions exactes sont écrites dans le contrat, et je te les détaille pendant l'appel.</p></details>
+      <details><summary>Est-ce que je pourrai quitter mon travail ?</summary><p>C'est souvent l'objectif. On construit d'abord tes revenus de closer à côté, puis on fixe ensemble le moment où tu peux partir sereinement.</p></details>
+      <details><summary>Je n'ai jamais vendu au téléphone.</summary><p>Si tu aimes échanger et convaincre, tu as l'essentiel. La technique d'un appel de vente s'apprend avec de l'entraînement, et c'est le cœur du programme.</p></details>
+      <details><summary>J'ai déjà suivi des formations qui n'ont rien donné.</summary><p>Ici, ce n'est pas une formation de plus : c'est un mentorat. Je suis tes progrès de près, j'écoute tes appels, et on vise des revenus concrets, pas seulement des connaissances.</p></details>
+      <details><summary>Je veux en parler à mon conjoint d'abord.</summary><p>C'est sain. Invite-le à l'appel : tout est transparent, et vous repartirez tous les deux avec les mêmes informations.</p></details>
+      <details><summary>C'est vraiment payé au résultat ?</summary><p>En partie, oui. Le prix est en deux parties : une à l'inscription, et une seconde que tu ne paies qu'après avoir encaissé tes premières commissions de closing, selon un seuil écrit dans le contrat. Je te donne tous les montants pendant l'appel.</p></details>
+      <details><summary>Combien je vais gagner ?</summary><p>Ça dépend de ta mission, de ton travail et du temps que tu y consacres. On regarde ensemble ce qui est réaliste pour toi pendant l'appel, chiffres à l'appui.</p></details>
+      <details><summary>J'appréhende l'appel.</summary><p>C'est normal. Ce n'est pas un interrogatoire : on regarde ta situation, ce que tu sais déjà faire, et si le closing est fait pour toi. Si ce n'est pas le cas, je te le dis.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- Dernier appel à l'action -->
+<section class="final" data-tone="dark">
+  <div class="wrap center" data-reveal>
+    <h2>Tes 90 prochains jours peuvent ressembler aux 90 derniers. Ou pas.</h2>
+    <p class="lede">Réserve ton appel de candidature. Dans le pire des cas, tu repars avec une vision claire de ce que tu peux faire.</p>
+    <a class="btn btn-light" href="#reserver">Réserver mon appel de candidature <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
+
+<footer class="foot" data-tone="light">
+  <p>MAESTRO · Alexandra Sudron · <a href="mentions-legales.html">Mentions légales</a> · <a href="cgv.html">CGV</a> · <a href="confidentialite.html">Confidentialité</a></p>
+  <p class="disclaimer">Les contenus de MAESTRO sont fournis à des fins de formation. Les résultats dépendent du travail de chacun, des missions disponibles et du marché. Les chiffres présentés sur cette page sont ceux d'Alexandra, pas ceux d'un élève type. Le remboursement s'applique dans les conditions prévues au contrat.</p>
+</footer>
+
 <script>
+/* Lecteur de la VSL : pas de barre de progression */
 (function(){
   var box=document.getElementById('vsl'), v=box.querySelector('video'), play=box.querySelector('.vsl-play'), fs=box.querySelector('.vsl-fs');
   function toggle(){ if(v.paused){ v.play(); } else { v.pause(); } }
-  play.addEventListener('click', toggle);
-  v.addEventListener('click', toggle);
+  play.addEventListener('click', toggle); v.addEventListener('click', toggle);
   v.addEventListener('play', function(){ box.classList.add('is-playing'); });
   v.addEventListener('pause', function(){ box.classList.remove('is-playing'); });
   v.addEventListener('ended', function(){ box.classList.remove('is-playing'); });
-  fs.addEventListener('click', function(){
-    if (v.requestFullscreen) v.requestFullscreen(); else if (v.webkitEnterFullscreen) v.webkitEnterFullscreen();
-  });
+  fs.addEventListener('click', function(){ if (v.requestFullscreen) v.requestFullscreen(); else if (v.webkitEnterFullscreen) v.webkitEnterFullscreen(); });
 })();
 </script>
-<a class="cta" href="#reserver">Réserver mon appel de candidature</a>
-<p class="cta-note">Appel gratuit de 45 minutes · une partie du prix n'est payée qu'après tes premiers résultats</p>
-</div>
-</header>
-<div class="marquee" aria-hidden="true"><div class="track"><span>Un métier, pas une formation de plus</span><span>Appels écoutés et corrigés</span><span>Offres de mission triées</span><span>Objectif : ta liberté</span><span>Payé en partie au résultat</span><span>Aucun revenu promis</span><span>Un mentorat, pas un cours en ligne</span><span>Enseigné par une closeuse qui en vit encore</span><span>Un métier, pas une formation de plus</span><span>Appels écoutés et corrigés</span><span>Offres de mission triées</span><span>Objectif : ta liberté</span><span>Payé en partie au résultat</span><span>Aucun revenu promis</span><span>Un mentorat, pas un cours en ligne</span><span>Enseigné par une closeuse qui en vit encore</span></div></div>
-
-<section class="section alt" id="reserver"><div class="in">
-<div class="kicker" data-reveal>Réserver</div>
-<h2 class="h2" data-reveal>Ton appel de candidature de 45 minutes</h2>
-<div class="bookgrid" data-stagger>
-<div class="stack" data-reveal="left">
-<p style="margin:0;font-size:17px">On regarde ensemble ta situation, ce que tu sais déjà faire, et si le closing est vraiment fait pour toi. Si je peux t'aider, je t'explique comment je fonctionne. Sinon, tu repars avec une vision claire.</p>
-</div>
-<div data-reveal="right">
-<p class="notice">Choisis ton créneau pour voir s'il reste des places</p>
-<p style="margin:0 0 16px;text-align:center;font-size:15px;color:var(--muted)">Je prends peu d'élèves à la fois, parce que j'écoute les appels de chacun. Et une partie du prix n'est payée qu'après tes premiers résultats.</p>
-<div class="cal"><div id="cal-inline"></div></div>
-<a class="fallback" href="https://cal.com/alexandra.call/45mins" target="_blank" rel="noopener">Le calendrier ne s'affiche pas ? Ouvre-le ici</a>
-</div>
-</div>
-</div></section>
-
-<div class="strip"><div class="in" data-stagger>
-<div data-reveal><b data-count="350000" data-prefix="+" data-suffix=" €">+350 000 €</b><span>de ventes générées pour mes clients dès mes premiers mois de closing</span></div>
-<div data-reveal><b data-count="3" data-prefix="+" data-suffix=" ans">+3 ans</b><span>que je vis de ce métier</span></div>
-<div data-reveal><b data-count="100" data-suffix=" %">100 %</b><span>à distance : je travaille depuis l'Italie, sur mes horaires</span></div>
-</div></div>
-
-<section class="section">
-<div class="kicker" data-reveal>Pourquoi MAESTRO</div>
-<h2 class="h2" data-reveal>Tu as une âme de commercial. Ton job actuel ne s'en sert pas.</h2>
-<p class="intro-p" data-reveal>Tu aimes échanger, tu sais convaincre, on t'a déjà dit que tu ferais un bon commercial. Le closing transforme ce talent en métier : à distance, à la commission, et avec la liberté d'organiser ta vie comme tu l'entends.</p>
-<div class="grid g2" data-stagger>
-<div class="tile" data-reveal><div class="n">01</div><h3>Un métier, pas une formation de plus</h3><p>Tu apprends ce que je fais chaque semaine : prendre des appels de vente pour des entrepreneurs qui vendent leurs formations en ligne.</p></div>
-<div class="tile" data-reveal><div class="n">02</div><h3>À côté de ton job</h3><p>Tu démarres en gardant ton salaire, puis tu choisis le moment où tu passes à ta liberté. Pas de saut dans le vide.</p></div>
-</div>
-</section>
-
-<section class="section alt" id="methode"><div class="in">
-<div class="kicker" data-reveal>La méthode Closer Placement · 90 jours</div>
-<h2 class="h2" data-reveal>On n'apprend pas à closer en regardant des vidéos. Comme on n'apprend pas le foot devant un match.</h2>
-<p class="intro-p" data-reveal>Si tu as déjà regardé des contenus sur le closing sans jamais passer à l'action, ce n'est pas un manque de motivation. C'est la méthode qui ne marche pas. Closer Placement repose sur un principe simple : la répétition sur de vrais appels, corrigés un par un par quelqu'un qui vit de ce métier.</p>
-<div class="grid g3" data-stagger>
-<div class="tile" data-reveal><div class="n">ÉTAPE 1</div><h3>Comprendre</h3><p>La trame d'un appel, la découverte, les objections. Le minimum utile, pas des heures de théorie.</p></div>
-<div class="tile" data-reveal><div class="n">ÉTAPE 2</div><h3>S'entraîner</h3><p>Des role-plays chaque semaine, puis tes vrais appels écoutés et corrigés. C'est là que tout se joue.</p></div>
-<div class="tile" data-reveal><div class="n">ÉTAPE 3</div><h3>Décrocher</h3><p>Offres de mission triées, préparation aux entretiens, présentation aux infopreneurs que je connais, aide pour négocier ta commission.</p></div>
-</div>
-<p class="intro-p" data-reveal style="margin-top:28px">Inclus : le guide pas à pas pour ton statut (micro-entreprise, factures) avant ta première commission, et 9 mois de suivi après ta première mission, pour qu'elle ne soit pas la dernière.</p>
-<p class="center" style="margin-top:32px"><a class="cta dark" href="#reserver">Voir si c'est fait pour moi</a></p>
-</div></section>
-
-<section class="section"><div class="in">
-<div class="kicker" data-reveal>La différence</div>
-<h2 class="h2" data-reveal>Ce que fait la plupart du marché, et ce que je fais</h2>
-<div class="compare" data-reveal>
-<div class="crow head"><div class="k">Sujet</div><div class="no">Ailleurs, souvent</div><div class="yes">MAESTRO</div></div>
-<div class="crow"><div class="k">L'objectif</div><div class="no">Un revenu mensuel promis</div><div class="yes">Une première mission en 90 jours, puis ta liberté</div></div>
-<div class="crow"><div class="k">Qui t'enseigne</div><div class="no">Souvent des formateurs qui ne closent plus</div><div class="yes">Une closeuse qui en vit encore aujourd'hui</div></div>
-<div class="crow"><div class="k">Le paiement</div><div class="no">Tout à l'inscription</div><div class="yes">Une partie à l'inscription, l'autre seulement après tes premiers résultats</div></div>
-<div class="crow"><div class="k">Le format</div><div class="no">Une formation en vidéos</div><div class="yes">Un mentorat, avec un suivi de près</div></div>
-<div class="crow"><div class="k">L'entraînement</div><div class="no">Peu ou pas de pratique</div><div class="yes">Tes appels écoutés et corrigés</div></div>
-<div class="crow"><div class="k">Les missions</div><div class="no">À chercher seul</div><div class="yes">Offres triées, préparation, présentations</div></div>
-</div>
-</div></section>
-
-<section class="section">
-<p class="quote" data-reveal="zoom" style="font-family:Archivo,system-ui,sans-serif;font-weight:700">« Dans un monde où l'on communique de moins en moins, le closing est l'art de savoir communiquer avec les autres. Et cet art a une haute valeur, qui te permet d'être libre. »</p>
-<p class="center" style="margin:12px 0 0;color:var(--muted)">Alexandra, fondatrice de MAESTRO</p>
-</section>
-
-
-
-<section class="section alt"><div class="in">
-<div class="kicker" data-reveal>Qui je suis</div>
-<h2 class="h2" data-reveal>Du football et de l'usine à la liberté</h2>
-<div class="mentor">
-<figure class="portrait" data-reveal="left"><img src="alexandra-maroc.jpg" width="800" height="1000" alt="Alexandra au téléphone devant une fontaine, de nuit, lors d'un voyage au Maroc" loading="lazy"></figure>
-<div data-reveal="right">
-<p>J'ai fait du football en sport-études. Ensuite, j'ai travaillé en usine.</p>
-<p>J'ai aussi passé un an de volontariat en Italie, où je vis aujourd'hui, à Gênes. Cela fait plus de 3 ans que je vis du closing. Dès mes tout premiers mois, j'ai généré plus de 350 000 € de ventes pour mes clients.</p>
-<p>Mais ce que ce métier m'a surtout apporté, c'est la liberté : je choisis où je vis, quand je travaille et avec qui. C'est cette liberté que je veux transmettre.</p>
-<p>J'ai créé MAESTRO pour enseigner ce métier avec honnêteté et transparence, dans un marché rempli de promesses de revenus que personne ne vérifie.</p>
-<a class="cta dark" href="#reserver">Réserver mon appel</a>
-</div>
-</div>
-</div></section>
-
-
-<section class="section">
-<div class="kicker" data-reveal>Questions fréquentes</div>
-<h2 class="h2" data-reveal>Ce qu'on me demande avant de réserver</h2>
-<div class="faq2" data-reveal>
-<details><summary>Comment savoir si c'est sérieux ?</summary><p>Je vis de ce métier depuis plus de 3 ans. Pendant l'appel, je te montre comment il fonctionne vraiment, avec de vrais exemples, et tu poses toutes les questions que tu veux.</p></details>
-<details><summary>Est-ce que je pourrai quitter mon travail ?</summary><p>C'est souvent l'objectif. On construit d'abord ton activité de closer à côté, puis on fixe ensemble le moment où tu peux partir sereinement.</p></details>
-<details><summary>Je n'ai jamais vendu au téléphone.</summary><p>Si tu aimes échanger et convaincre, tu as l'essentiel. La technique d'un appel de vente s'apprend avec de l'entraînement, et c'est le cœur du programme.</p></details>
-<details><summary>J'ai déjà suivi des formations qui n'ont rien donné.</summary><p>Ici, ce n'est pas une formation de plus : c'est un mentorat. Je suis tes progrès de près, j'écoute tes appels, et on vise une mission concrète, pas seulement des connaissances.</p></details>
-<details><summary>Je veux en parler à mon conjoint d'abord.</summary><p>C'est sain. Invite-le à l'appel si tu veux : tout est transparent, et vous repartirez tous les deux avec les mêmes informations.</p></details>
-<details><summary>C'est vraiment payé au résultat ?</summary><p>En partie, oui. Le prix est en deux parties : une à l'inscription, et une seconde que tu ne paies qu'après avoir encaissé tes premières commissions de closing, selon un seuil écrit noir sur blanc dans le contrat. Je te donne tous les montants pendant l'appel.</p></details>
-<details><summary>Combien je vais gagner ?</summary><p>Ça dépend : de ta mission, de ton travail et du temps que tu y consacres. Je ne te promets pas de revenu. On regarde ensemble ce qui est réaliste pour toi pendant l'appel.</p></details>
-<details><summary>Et si ça ne marche pas pour moi ?</summary><p>Ça arrive : le closing n'est pas fait pour tout le monde. C'est justement pour ça qu'on en parle avant, pendant l'appel. Si on travaille ensemble, je t'accompagne de près pour mettre toutes les chances de ton côté.</p></details>
-<details><summary>J'appréhende l'appel.</summary><p>C'est normal. Ce n'est pas un interrogatoire : on regarde ta situation, ce que tu sais déjà faire, et si le closing est fait pour toi. Si ce n'est pas le cas, je te le dis.</p></details>
-</div>
-</section>
-<p class="center" style="margin:0 0 64px"><a class="cta dark" href="#reserver">Réserver mon appel</a></p>
-
-
-<footer>MAESTRO · Alexandra Sudron · <a href="mentions-legales.html">Mentions légales</a> · <a href="cgv.html">CGV</a> · <a href="confidentialite.html">Confidentialité</a></footer>
-<p class="disclaimer">Les contenus de MAESTRO sont fournis à des fins de formation. Aucun revenu n'est garanti : les résultats dépendent du travail de chacun, des missions disponibles et du marché. Les chiffres présentés sur cette page sont ceux d'Alexandra, pas ceux d'un élève type.</p>
-
 <script type="text/javascript">
 (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
 Cal("init", "45mins", { origin: "https://cal.com" });
 Cal.ns["45mins"]("inline", { elementOrSelector: "#cal-inline", config: { layout: "month_view", theme: "light" }, calLink: "alexandra.call/45mins" });
-Cal.ns["45mins"]("ui", { theme: "light", hideEventTypeDetails: false, layout: "month_view", cssVarsPerTheme: { light: { "cal-brand": "#191862" } } });
-
+Cal.ns["45mins"]("ui", { theme: "light", hideEventTypeDetails: true, layout: "month_view", cssVarsPerTheme: { light: { "cal-brand": "#191862" } } });
 Cal.ns["45mins"]("on", { action: "bookingSuccessful", callback: function () { if (window.maestroTrack) window.maestroTrack("Schedule"); setTimeout(function () { window.location.href = "merci.html"; }, 1200); } });
 </script>
 <script src="track.js?v=12"></script>
-<script src="anim.js?v=12"></script>
+<script src="site.js?v=1"></script>
 </body>
 </html>
