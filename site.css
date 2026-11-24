@@ -326,3 +326,33 @@ section{position:relative}
 .stat .stat-ic{display:grid;margin-top:0}
 .lines::before{left:-54px;top:-30px;font-size:120px}
 @media (max-width:900px){.lines::before{left:-6px;top:-70px}}
+
+/* ===== v4 ===== */
+.kicker::before{display:none}
+.kicker{gap:0}
+/* comparatif en face-à-face */
+.versus{display:grid;gap:18px;margin-top:48px;position:relative;align-items:stretch}
+@media (min-width:860px){.versus{grid-template-columns:1fr 1fr;gap:28px}}
+.vs-col{border-radius:24px;padding:28px 26px 18px;position:relative;overflow:hidden}
+.vs-no{background:#F4F4F7;border:1px solid var(--line)}
+.vs-yes{background:linear-gradient(155deg,var(--blue-2),var(--blue) 55%,var(--blue-3));color:#FFFFFF;box-shadow:0 30px 60px -28px rgba(25,24,98,.7)}
+.vs-yes::before{content:"";position:absolute;width:320px;height:320px;right:-120px;top:-140px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,63,.35),transparent 70%);pointer-events:none}
+@media (min-width:860px){.vs-yes{transform:scale(1.03)}}
+.vs-top{margin-bottom:12px}
+.vs-tag{display:inline-block;font-family:Archivo,system-ui,sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
+.vs-no .vs-tag{background:#E7E8EE;color:var(--muted)}
+.vs-yes .vs-tag{background:var(--gold);color:var(--blue-3)}
+.versus ul{list-style:none;margin:0;padding:0}
+.versus li{padding:15px 0;border-top:1px solid var(--line);display:grid;gap:4px;transition:transform .25s ease}
+.vs-yes li{border-top-color:rgba(255,255,255,.12)}
+.versus li:hover{transform:translateX(4px)}
+.versus .lbl{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8A8F99}
+.vs-yes .lbl{color:#AEB0E0}
+.versus .val{display:flex;gap:10px;align-items:flex-start;font-size:16px;line-height:1.45}
+.vs-no .val{color:#6B707A}
+.vs-yes .val{color:#FFFFFF;font-weight:600}
+.mk{flex:0 0 22px;width:22px;height:22px;border-radius:50%;padding:3px}
+.vs-no .mk{background:#FBE9E7;color:var(--red)}
+.vs-yes .mk{background:var(--gold);color:var(--blue-3)}
+.vs-badge{display:none}
+@media (min-width:860px){.vs-badge{display:grid;place-items:center;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:#FFFFFF;color:var(--blue);font-family:Archivo,system-ui,sans-serif;font-weight:900;font-size:16px;box-shadow:0 10px 30px -8px rgba(25,24,98,.45);z-index:2;border:3px solid var(--soft)}}
