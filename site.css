@@ -357,3 +357,16 @@ section{position:relative}
 .vs-badge{display:none}
 @media (min-width:860px){.vs-badge{display:grid;place-items:center;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:#FFFFFF;color:var(--blue);font-family:Archivo,system-ui,sans-serif;font-weight:900;font-size:16px;box-shadow:0 10px 30px -8px rgba(25,24,98,.45);z-index:2;border:3px solid var(--soft)}}
 .cta-row{text-align:center;margin-top:48px}
+
+/* ===== v7 : finitions mobile ===== */
+html,body{overflow-x:clip}
+h1,h2,.kicker{text-wrap:balance}
+@media (max-width:640px){
+  .btn{white-space:nowrap;font-size:clamp(13.5px,3.9vw,16px);gap:8px;padding:0 14px}
+  .word-photo{max-width:300px;transform:none}
+  .word-photo img{aspect-ratio:4/5;max-height:360px}
+  .lines{margin-top:58px}
+  .lines::before{left:-4px;top:-64px;font-size:96px}
+  .vsl-play .lbl{font-size:14px;padding:6px 12px}
+  .vsl-fs{width:34px;height:34px;right:10px;top:10px;bottom:auto}
+}
